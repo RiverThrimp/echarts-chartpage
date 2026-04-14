@@ -1,0 +1,18 @@
+{
+  "title": "Traffic Source Mix",
+  "description": "Share of inbound sessions by traffic source.",
+  "goal": "composition",
+  "theme": "light",
+  "outputMode": "single_html",
+  "data": [
+    { "source": "Organic", "sessions": 4200 },
+    { "source": "Paid", "sessions": 2100 },
+    { "source": "Referral", "sessions": 1100 },
+    { "source": "Direct", "sessions": 1700 }
+  ],
+  "fields": {
+    "x": "source",
+    "y": "sessions",
+    "category": "source"
+  }
+}

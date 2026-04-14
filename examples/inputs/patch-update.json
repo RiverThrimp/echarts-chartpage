@@ -1,0 +1,7 @@
+{
+  "title": "Quarterly Pipeline Snapshot",
+  "theme": "dark",
+  "chartType": "bar",
+  "removeY": ["pipeline"],
+  "addY": ["won"]
+}

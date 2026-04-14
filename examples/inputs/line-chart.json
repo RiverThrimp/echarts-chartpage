@@ -1,0 +1,19 @@
+{
+  "title": "Monthly Revenue Trend",
+  "description": "Revenue growth across the first half of the year.",
+  "goal": "trend",
+  "theme": "light",
+  "outputMode": "single_html",
+  "data": [
+    { "month": "2025-01", "revenue": 120 },
+    { "month": "2025-02", "revenue": 132 },
+    { "month": "2025-03", "revenue": 148 },
+    { "month": "2025-04", "revenue": 156 },
+    { "month": "2025-05", "revenue": 171 },
+    { "month": "2025-06", "revenue": 190 }
+  ],
+  "fields": {
+    "x": "month",
+    "y": "revenue"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Department Spend Comparison",
+  "description": "Compare planned versus actual spend by department.",
+  "goal": "compare",
+  "theme": "light",
+  "outputMode": "single_html",
+  "data": [
+    { "department": "Product", "planned": 82, "actual": 78 },
+    { "department": "Marketing", "planned": 64, "actual": 69 },
+    { "department": "Sales", "planned": 74, "actual": 80 },
+    { "department": "Support", "planned": 52, "actual": 49 }
+  ],
+  "fields": {
+    "x": "department",
+    "y": ["planned", "actual"]
+  }
+}

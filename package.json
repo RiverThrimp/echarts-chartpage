@@ -1,0 +1,96 @@
+{
+  "name": "echarts-chartpage",
+  "version": "0.1.0",
+  "description": "Generate safe, runnable HTML chart pages powered by Apache ECharts from structured data, with npm, CLI, and MCP support.",
+  "type": "module",
+  "keywords": [
+    "echarts",
+    "chart",
+    "html",
+    "generator",
+    "mcp",
+    "cli",
+    "visualization"
+  ],
+  "homepage": "https://github.com/RiverThrimp/ai#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/RiverThrimp/ai.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RiverThrimp/ai/issues"
+  },
+  "license": "MIT",
+  "author": "Open Source Contributors",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "echarts-chartpage": "./dist/cli/index.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./cli": {
+      "types": "./dist/cli/index.d.ts",
+      "import": "./dist/cli/index.js"
+    },
+    "./mcp": {
+      "types": "./dist/mcp/server.d.ts",
+      "import": "./dist/mcp/server.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "SECURITY.md",
+    "LICENSE",
+    "CHANGELOG.md",
+    "CONTRIBUTING.md",
+    "docs",
+    "examples",
+    "skills"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --target node20 --out-dir dist --sourcemap --clean --splitting false && tsup src/cli/index.ts src/mcp/server.ts src/scripts/install-skill.ts --format esm --dts --target node20 --out-dir dist --sourcemap --splitting false",
+    "lint": "eslint .",
+    "security:scan": "bash tools/scan-secrets.sh",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "format": "prettier --check .",
+    "format:write": "prettier --write .",
+    "examples:generate": "node --import tsx examples/generate-examples.ts",
+    "mcp:exercise": "node --import tsx tools/exercise-mcp.ts",
+    "verify": "npm run lint && npm run typecheck && npm run test && npm run build",
+    "release:check": "npm run verify && npm run security:scan && npm run mcp:exercise && bash tools/verify-package-install.sh",
+    "mcp:start": "node dist/mcp/server.js",
+    "skill:install": "node dist/scripts/install-skill.js",
+    "prepublishOnly": "npm run verify"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "commander": "^14.0.0",
+    "echarts": "^5.6.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.20.0",
+    "@types/node": "^24.0.0",
+    "eslint": "^9.20.0",
+    "globals": "^15.15.0",
+    "prettier": "^3.5.0",
+    "tsup": "^8.3.5",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.0",
+    "typescript-eslint": "^8.24.0",
+    "vitest": "^3.0.5"
+  }
+}

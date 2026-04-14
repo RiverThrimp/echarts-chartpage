@@ -1,0 +1,23 @@
+{
+  "title": "Regional Signups by Month",
+  "description": "Monthly signup trend split by region.",
+  "goal": "trend",
+  "theme": "dark",
+  "outputMode": "single_html",
+  "data": [
+    { "month": "2025-01", "region": "APAC", "signups": 84 },
+    { "month": "2025-01", "region": "EMEA", "signups": 72 },
+    { "month": "2025-01", "region": "AMER", "signups": 96 },
+    { "month": "2025-02", "region": "APAC", "signups": 89 },
+    { "month": "2025-02", "region": "EMEA", "signups": 77 },
+    { "month": "2025-02", "region": "AMER", "signups": 103 },
+    { "month": "2025-03", "region": "APAC", "signups": 98 },
+    { "month": "2025-03", "region": "EMEA", "signups": 79 },
+    { "month": "2025-03", "region": "AMER", "signups": 108 }
+  ],
+  "fields": {
+    "x": "month",
+    "y": "signups",
+    "series": "region"
+  }
+}

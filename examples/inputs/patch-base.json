@@ -1,0 +1,17 @@
+{
+  "title": "Quarterly Pipeline",
+  "description": "Pipeline and closed-won totals by quarter.",
+  "goal": "compare",
+  "theme": "light",
+  "outputMode": "single_html",
+  "data": [
+    { "quarter": "Q1", "pipeline": 320, "won": 118 },
+    { "quarter": "Q2", "pipeline": 360, "won": 132 },
+    { "quarter": "Q3", "pipeline": 390, "won": 141 },
+    { "quarter": "Q4", "pipeline": 430, "won": 166 }
+  ],
+  "fields": {
+    "x": "quarter",
+    "y": ["pipeline", "won"]
+  }
+}
