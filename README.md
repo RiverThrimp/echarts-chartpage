@@ -358,9 +358,10 @@ npm run test
 Before publishing:
 
 1. Update repository URLs in `package.json`.
-2. Review the `CHANGELOG.md`.
-3. Run `npm run verify`.
-4. Publish with `npm publish`.
+2. Ensure the npm account `daqiang901003` is authenticated on the publishing machine.
+3. Review the `CHANGELOG.md`.
+4. Run `npm run verify`.
+5. Publish with `npm publish`.
 
 The package is configured with:
 
