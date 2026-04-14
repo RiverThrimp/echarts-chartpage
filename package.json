@@ -12,13 +12,13 @@
     "cli",
     "visualization"
   ],
-  "homepage": "https://github.com/RiverThrimp/ai#readme",
+  "homepage": "https://github.com/RiverThrimp/echarts-chartpage#readme",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/RiverThrimp/ai.git"
+    "url": "git+https://github.com/RiverThrimp/echarts-chartpage.git"
   },
   "bugs": {
-    "url": "https://github.com/RiverThrimp/ai/issues"
+    "url": "https://github.com/RiverThrimp/echarts-chartpage/issues"
   },
   "license": "MIT",
   "author": "daqiang901003",
