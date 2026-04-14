@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.1
+
+- Updated package metadata to point at the public GitHub repository
+- Fixed npm CLI bin publishing metadata
+- Hardened release validation and publishing documentation
+
 ## 0.1.0
 
 - Initial release of `echarts-chartpage`
